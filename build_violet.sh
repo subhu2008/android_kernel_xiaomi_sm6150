@@ -28,7 +28,7 @@ touch .config
 
 # 5. Setup defconfig with droidspaces support. (touch .config again too)
 
-touch .config; make -j$(nproc --all) ARCH=arm64 SUBARCH=arm64 CC=clang HOSTCC=clang CXX=clang++ HOSTCXX=clang++ LTO=thin CROSS_COMPILE=aarch64-linux-gnu- CLANG_TRIPLE=aarch64-linux-gnu- stock.config droidspaces.config version.config
+touch .config; make -j$(nproc --all) ARCH=arm64 SUBARCH=arm64 CC=clang HOSTCC=clang CXX=clang++ HOSTCXX=clang++ LTO=thin CROSS_COMPILE=aarch64-linux-gnu- CLANG_TRIPLE=aarch64-linux-gnu- violet-los.config droidspaces.config version.config
 
 # 6. Cook kernel.
 
